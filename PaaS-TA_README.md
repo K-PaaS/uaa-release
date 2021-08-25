@@ -19,7 +19,7 @@ $ git clone  https://github.com/PaaS-TA/uaa-release -b 74.29.0-PaaS-TA-v2
 $ cd uaa-release
 $ git submodule sync --recursive && git submodule foreach --recursive git submodule sync  && git submodule update --init --recursive
 $ cd  src/
-$ cp uaa-javas/server/src/main/java/org/cloudfoundry/identity/uaa/util/beans/BackwardsCompatibleDelegatingPasswordEncoder.java uaa/server/src/main/java/org/cloudfoundry/identity/uaa/util/beans/BackwardsCompatibleDelegatingPasswordEncoder.java
-$ cp uaa-javas/server/src/main/java/org/cloudfoundry/identity/uaa/util/beans/PasswordEncoderConfig.java uaa/server/src/main/java/org/cloudfoundry/identity/uaa/util/beans/PasswordEncoderConfig.java
+$ cp uaa-javas/BackwardsCompatibleDelegatingPasswordEncoder.java uaa/server/src/main/java/org/cloudfoundry/identity/uaa/util/beans/BackwardsCompatibleDelegatingPasswordEncoder.java
+$ cp uaa-javas/PasswordEncoderConfig.java uaa/server/src/main/java/org/cloudfoundry/identity/uaa/util/beans/PasswordEncoderConfig.java
 $ bosh create-release ...
 ```
